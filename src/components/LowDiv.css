@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Jost-Medium;
+  src: url(/src/assets/Fonts/Jost-Medium.ttf);
+}
+@font-face {
+  font-family: Jost-Regular;
+  src: url(/src/assets/Fonts/Jost-Regular.ttf);
+}
+.LowDiv {
+  background-color: rgba(252, 252, 252, 0.6);
+  width: auto;
+  height: 34.93%;
+  position: relative;
+}
+
+.LowDiv::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/UpDivImg.png);
+  filter: blur(60px);
+}

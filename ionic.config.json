@@ -1,0 +1,7 @@
+{
+  "name": "litter-ver",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

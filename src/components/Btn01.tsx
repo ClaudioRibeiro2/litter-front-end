@@ -8,7 +8,7 @@ const Btn01: React.FC<ContainerProps> = () => {
     <div className="container">
       <a href="/logar"><button className="btn01" type="button">Entrar</button></a>
       <div className="divP">
-      <p className="p01">Não possui uma conta?<a href="/splash" className="link">Cadastre-se</a></p>
+      <p className="p01">Não possui uma conta? <a href="/sign" className="link">Cadastre-se</a></p>
       </div>
     </div>
   );

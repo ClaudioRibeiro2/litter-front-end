@@ -1,9 +1,8 @@
-import './MidDiv.css';
-import icon from '../assets/icon/visibility.svg'
+import './LoginMid.css';
 
 interface ContainerProps { }
 
-const MidDiv: React.FC<ContainerProps> = () => {
+const LoginMid: React.FC<ContainerProps> = () => {
   return (
     <div className="MidDiv">
       <div className="inptDiv01">
@@ -18,4 +17,4 @@ const MidDiv: React.FC<ContainerProps> = () => {
   );
 };
 
-export default MidDiv;
+export default LoginMid;

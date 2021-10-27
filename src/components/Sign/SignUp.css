@@ -7,49 +7,51 @@
   src: url(/src/assets/Fonts/Jost-Regular.ttf);
 }
 
-.UpDiv {
-  background-color: rgba(252, 252, 252, 0.6);
+.contentUp {
+  background-color: rgba(254, 254, 254, 0.55);
   width: auto;
   height: 33.82%;
   position: relative;
 }
 
-.UpDiv::before{
+.contentUp::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../assets/UpDivImg.png);
+  background-image: url(../../assets/UpDivImg.png);
   filter: blur(60px);
 }
 
-.content{
+.divUp{
+  height: 19.47%;
+  width: auto;
+  margin: 0px 3.02%;
+  filter: blur(0px);
   position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
-  height: 18.9%;
-  margin-top: 235px;
 }
 
-.headerLogin {
+.header{
   font-family: Jost-Medium;
   font-size: 26px;
   line-height: 29px;
   color: #181725;
-  filter: blur(0px);
-  margin-left: 6.04%;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 0;
 }
 
-.headerDesc{
+.p1{
   font-family: Jost-Regular;
   font-size: 16px;
   line-height: 15px;
-  color: #7C7C7C;
-  margin-left: 6.04%;
-  margin-top: 1.67%;
-  margin-bottom: 0px;
+  color: #7c7c7c;
+  margin: 0px;
+  position: absolute;
+  bottom: 0;
 }

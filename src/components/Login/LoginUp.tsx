@@ -1,8 +1,8 @@
-import './UpDiv.css';
+import './LoginUp.css';
 
 interface ContainerProps { }
 
-const UpDiv: React.FC<ContainerProps> = () => {
+const LoginUp: React.FC<ContainerProps> = () => {
   return (
     <div className="UpDiv">
       <div className="content">
@@ -13,4 +13,4 @@ const UpDiv: React.FC<ContainerProps> = () => {
   );
 };
 
-export default UpDiv;
+export default LoginUp;

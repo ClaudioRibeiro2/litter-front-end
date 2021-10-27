@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Jost-Medium;
+    src: url(/src/assets/Fonts/Jost-Medium.ttf);
+  }
+  @font-face {
+    font-family: Jost-Regular;
+    src: url(/src/assets/Fonts/Jost-Regular.ttf);
+  }
+.contentMid{
+    background-color:rgba(254, 254, 254, 0.55);
+    width: auto;
+    height: 37.72%;
+}

@@ -1,10 +1,9 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import MidDiv from '../components/MidDiv';
-import UpDiv from '../components/UpDiv';
-import LowDiv from '../components/LowDiv';
-import './Home.css';
+import MidDiv from '../components/Login/LoginMid';
+import UpDiv from '../components/Login/LoginUp';
+import LowDiv from '../components/Login/LoginLow';
 
-const Home: React.FC = () => {
+const Login: React.FC = () => {
   return (
     <IonPage>
       <IonContent fullscreen>
@@ -16,4 +15,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Login;

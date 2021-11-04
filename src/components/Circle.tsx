@@ -1,3 +1,4 @@
+import React from "react";
 import { IonButton, IonLabel, IonItem, IonInput, IonItemDivider } from '@ionic/react';
 import './Circle.css';
 import icon from '../../public/assets/icon/icon.png';

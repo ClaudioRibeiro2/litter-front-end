@@ -1,3 +1,4 @@
+import React from "react";
 import './LoginMid.css';
 
 interface ContainerProps { }

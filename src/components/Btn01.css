@@ -7,59 +7,33 @@
   src: url(/src/assets/Fonts/Jost-Regular.ttf);
 }
 
-
-.container {
+.btn-div1 {
   text-align: center;
   filter: blur(0px);
 }
 
-.btn01 {
+.btn1 {
   height: 67px;
   width: 364px;
   font-size: 18px;
   font-weight: 700;
-  background-color: #FF8B59 ; 
-  color: #FFF9FF;
+  background-color: #ff8b59;
+  color: #fff9ff;
   border-radius: 19px;
-  margin-top: 100px;
 }
-
-.divEmail{
-  text-align: center;
-  height: 80px;
-  width: 364px;
-  border-bottom: 1px solid #e2e2e2;
+.btn-div2 {
 }
-
-.pEmail{
-  text-align: left;
-  height: 40px;
-  width: auto;
-  color: #7c7c7c;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0px !important;
-}
-
-.ipntEmail{
-  text-align: left;
-  height: 40px;
-  width: 364px;
-  border: 0px;
-  padding-left: 0px;
-}
-
-.p01{
+.btn-p1 {
   font-family: Jost-Regular;
   font-size: 14px;
   line-height: 15.1px;
   margin-top: 30px !important;
 }
 
-.link{
+.btn-a1 {
   font-family: Jost-Regular;
   text-decoration: none;
   font-size: 14px;
   line-height: 15.1px;
-  color: #FF8B59;
+  color: #ff8b59;
 }

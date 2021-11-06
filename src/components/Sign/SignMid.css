@@ -1,13 +1,100 @@
 @font-face {
-    font-family: Jost-Medium;
-    src: url(/src/assets/Fonts/Jost-Medium.ttf);
-  }
-  @font-face {
-    font-family: Jost-Regular;
-    src: url(/src/assets/Fonts/Jost-Regular.ttf);
-  }
-.contentMid{
-    background-color:rgba(254, 254, 254, 0.55);
-    width: auto;
-    height: 37.72%;
+  font-family: Jost-Medium;
+  src: url(/src/assets/Fonts/Jost-Medium.ttf);
+}
+@font-face {
+  font-family: Jost-Regular;
+  src: url(/src/assets/Fonts/Jost-Regular.ttf);
+}
+.SignMid {
+  background-color: rgba(254, 254, 254, 0.55);
+  width: auto;
+  height: 37.72%;
+}
+.sign-mid-div1 {
+  font-family: Jost-Regular;
+  background-color: #fcfcfc;
+  height: 28.57%;
+  width: 87.92%;
+  margin-left: 6.04%;
+  margin-top: 6.04%;
+}
+
+.sign-mid-p1 {
+  font-family: Jost-Regular;
+  color: #7c7c7c;
+  height: 40px;
+  width: 100%;
+  margin: 0px;
+}
+
+.sign-mid-inpt1 {
+  font-family: Jost-Regular;
+  color: #000000;
+  font-size: 18px;
+  height: 40px;
+  width: 100%;
+  border: 0px;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #fcfcfc;
+  outline: 0;
+  padding: 0px;
+}
+
+.sign-mid-div2 {
+  font-family: Jost-Regular;
+  background-color: #fcfcfc;
+  height: 28.57%;
+  width: 87.92%;
+  margin-left: 6.04%;
+}
+
+.sign-mid-p2 {
+  font-family: Jost-Regular;
+  color: #7c7c7c;
+  height: 40px;
+  width: 100%;
+  margin: 0px;
+}
+
+.sign-mid-inpt2 {
+  font-family: Jost-Regular;
+  color: #000000;
+  font-size: 18px;
+  height: 40px;
+  width: 100%;
+  border: 0px;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #fcfcfc;
+  outline: 0;
+  padding: 0px;
+}
+
+.sign-mid-div3 {
+  font-family: Jost-Regular;
+  background-color: #fcfcfc;
+  height: 28.57%;
+  width: 87.92%;
+  margin-left: 6.04%;
+}
+
+.sign-mid-p3 {
+  font-family: Jost-Regular;
+  color: #7c7c7c;
+  height: 40px;
+  width: 100%;
+  margin: 0px;
+}
+
+.sign-mid-inpt3 {
+  font-family: Jost-Regular;
+  font-size: 20px;
+  color: #000000;
+  height: 40px;
+  width: 100%;
+  border: 0px;
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #fcfcfc;
+  outline: 0;
+  padding: 0px;
 }

@@ -5,7 +5,7 @@ import Circle from '../components/Circle';
 const Splash: React.FC = () => {
   return (
     <IonPage>
-      <div className = "splashDiv">
+      <div className = "Splash">
       <Circle />
       </div>
     </IonPage>

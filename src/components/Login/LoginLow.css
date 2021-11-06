@@ -6,21 +6,22 @@
   font-family: Jost-Regular;
   src: url(/src/assets/Fonts/Jost-Regular.ttf);
 }
-.LowDiv {
+.div-login-low {
   background-color: rgba(252, 252, 252, 0.6);
   width: auto;
   height: 34.93%;
   position: relative;
 }
 
-.LowDiv::before{
+.div-login-low::before{
   content: "";
   position: absolute;
-  bottom: 0;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  background: rgba(252, 252, 252, 0.6);
   background-image: url(../../assets/UpDivImg.png);
-  filter: blur(60px);
+  background-repeat: no-repeat;
+  background-position:center bottom;
+  filter: blur(90px);
 }

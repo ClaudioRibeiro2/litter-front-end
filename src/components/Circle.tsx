@@ -6,7 +6,7 @@ interface ContainerProps { }
 
 const Circle: React.FC<ContainerProps> = () => {
   return (
-    <div className="divCircle">
+    <div className="Circle">
         <img src="../../public/assets/icon/icon.png" alt="iocn" />
     </div>
   );

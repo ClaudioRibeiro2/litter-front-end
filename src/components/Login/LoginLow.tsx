@@ -5,7 +5,7 @@ interface ContainerProps { }
 
 const LoginLow: React.FC<ContainerProps> = () => {
   return (
-    <div className="LowDiv">
+    <div className="div-login-low">
       <Btn01 />
     </div>
   );

@@ -1,4 +1,4 @@
-  @font-face {
+@font-face {
   font-family: Jost-Medium;
   src: url(/src/assets/Fonts/Jost-Medium.ttf);
 }
@@ -7,30 +7,29 @@
   src: url(/src/assets/Fonts/Jost-Regular.ttf);
 }
 
-.MidDiv {
+.LoginMid {
   height: 31.25%;
   background-color: #fcfcfc;
   padding-top: 6.04%;
 }
 
-.inptDiv01 {
+.login-mid-div1 {
   font-family: Jost-Regular;
   background-color: #fcfcfc;
-  height: 28.57%;
+  height: 23.67%;
   width: 87.92%;
   margin-left: 6.04%;
 }
 
-.p01{
+.login-mid-p1 {
   font-family: Jost-Regular;
-  color: #7C7C7C;
+  color: #7c7c7c;
   height: 40px;
   width: 100%;
   margin: 0px;
-  
 }
 
-.inpt01{
+.login-mid-inpt1 {
   font-family: Jost-Regular;
   color: #000000;
   font-size: 18px;
@@ -41,27 +40,26 @@
   background-color: #fcfcfc;
   outline: 0;
   padding: 0px;
-  
 }
 
-.inptDiv02 {
+.login-mid-div2 {
   font-family: Jost-Regular;
   background-color: #fcfcfc;
-  height: 28.57%;
+  height: 23.67%;
   width: 87.92%;
   margin-top: 6.04%;
   margin-left: 6.04%;
 }
 
-.p02{
+.login-mid-p2 {
   font-family: Jost-Regular;
-  color: #7C7C7C;
+  color: #7c7c7c;
   height: 40px;
   width: 100%;
   margin: 0px;
 }
 
-.inpt02{
+.login-mid-inpt2 {
   font-family: Jost-Regular;
   font-size: 20px;
   color: #000000;

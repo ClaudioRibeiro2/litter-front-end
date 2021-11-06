@@ -1,17 +1,17 @@
-import './LoginMid.css';
+import "./LoginMid.css";
 
-interface ContainerProps { }
+interface ContainerProps {}
 
 const LoginMid: React.FC<ContainerProps> = () => {
   return (
-    <div className="MidDiv">
-      <div className="inptDiv01">
-        <p className="p01" >Email</p>
-        <input type="text" className="inpt01" />
+    <div className="LoginMid">
+      <div className="login-mid-div1">
+        <p className="login-mid-p1">Email</p>
+        <input type="text" className="login-mid-inpt1" />
       </div>
-      <div className="inptDiv02">
-        <p className="p02" >Senha</p>
-        <input type="password" className="inpt02" />
+      <div className="login-mid-div2">
+        <p className="login-mid-p2">Senha</p>
+        <input type="password" className="login-mid-inpt2" />
       </div>
     </div>
   );

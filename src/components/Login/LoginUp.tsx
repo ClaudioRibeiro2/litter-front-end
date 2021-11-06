@@ -1,13 +1,13 @@
-import './LoginUp.css';
+import "./LoginUp.css";
 
-interface ContainerProps { }
+interface ContainerProps {}
 
 const LoginUp: React.FC<ContainerProps> = () => {
   return (
-    <div className="UpDiv">
-      <div className="content">
-      <p className="headerLogin">Login</p>
-      <p className="headerDesc" >Adicione seu email e senha.</p>
+    <div className="LoginUp">
+      <div className="login-up-div1">
+        <p className="login-up-p1">Login</p>
+        <p className="login-up-p2">Adicione seu email e senha.</p>
       </div>
     </div>
   );

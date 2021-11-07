@@ -1,5 +1,14 @@
-.Splash{
-    width: auto;
-    height: 100%;
-    background-color: #FF8B59;
+.Splash {
+  width: auto;
+  height: 100%;
+  background-color: #ff8b59;
+}
+.div1-splash {
+  background-color: transparent;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  position: absolute;
+  left: 145px;
+  top: 386px;
 }

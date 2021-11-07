@@ -6,22 +6,56 @@
   font-family: Jost-Regular;
   src: url(/src/assets/Fonts/Jost-Regular.ttf);
 }
-.div-login-low {
+.LoginLow {
   background-color: rgba(252, 252, 252, 0.6);
   width: auto;
-  height: 34.93%;
+  height: 313px;
   position: relative;
+  background: rgba(252, 252, 252, 0.6);
 }
-
-.div-login-low::before{
+.LoginLow::before {
   content: "";
   position: absolute;
   top: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(252, 252, 252, 0.6);
-  background-image: url(../../assets/UpDivImg.png);
+  background-image: url(../../assets/login-img2.png);
   background-repeat: no-repeat;
-  background-position:center bottom;
-  filter: blur(90px);
+  background-position: center bottom;
+  filter: blur(60px);
+}
+
+.div1-login-low {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: blur(0px);
+}
+
+.btn1-login-low {
+  height: 67px;
+  width: 364px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #ff8b59;
+  color: #fff9ff;
+  border-radius: 19px;
+}
+
+.p1-login-low {
+  font-family: Jost-Regular;
+  font-size: 14px;
+  line-height: 15.1px;
+  margin-top: 30px !important;
+}
+
+.a1-login-low{
+  font-family: Jost-Regular;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 15.1px;
+  color: #ff8b59;
 }

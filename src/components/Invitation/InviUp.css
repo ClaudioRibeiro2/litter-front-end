@@ -7,24 +7,19 @@
   src: url(/src/assets/Fonts/Jost-Regular.ttf);
 }
 
-.SignLow {
-  background-color: rgba(254, 254, 254, 0.55);
+.InviUp {
+  background-color: rgba(252, 252, 252, 0.6);
   width: auto;
-  height: 28.46%;
+  height: 233px;
   position: relative;
 }
-
-.SignLow::before {
+.InviUp::before {
   content: "";
   position: absolute;
-  bottom: 0;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(252, 252, 252, 0.6);
-  background-image: url(../../assets/sign-img2.png);
-  background-repeat: no-repeat;
-  background-position:center bottom;
-  filter: blur(90px);
+  background-image: url(../../assets/UpDivImg.png);
+  filter: blur(60px);
 }

@@ -8,20 +8,33 @@
 }
 
 .LoginMid {
-  height: 31.25%;
+  height: 280px;
   background-color: #fcfcfc;
-  padding-top: 6.04%;
 }
 
 .login-mid-div1 {
   font-family: Jost-Regular;
   background-color: #fcfcfc;
-  height: 23.67%;
-  width: 87.92%;
-  margin-left: 6.04%;
+  height: 60px;
+  width: 364px;
+  margin: 0 25px;
+}
+.login-mid-div2 {
+  font-family: Jost-Regular;
+  background-color: #fcfcfc;
+  height: 60px;
+  width: 364px;
+  margin: 25px 25px;
 }
 
 .login-mid-p1 {
+  font-family: Jost-Regular;
+  color: #7c7c7c;
+  height: 40px;
+  width: 100%;
+  margin: 0px;
+}
+.login-mid-p2 {
   font-family: Jost-Regular;
   color: #7c7c7c;
   height: 40px;
@@ -41,24 +54,6 @@
   outline: 0;
   padding: 0px;
 }
-
-.login-mid-div2 {
-  font-family: Jost-Regular;
-  background-color: #fcfcfc;
-  height: 23.67%;
-  width: 87.92%;
-  margin-top: 6.04%;
-  margin-left: 6.04%;
-}
-
-.login-mid-p2 {
-  font-family: Jost-Regular;
-  color: #7c7c7c;
-  height: 40px;
-  width: 100%;
-  margin: 0px;
-}
-
 .login-mid-inpt2 {
   font-family: Jost-Regular;
   font-size: 20px;

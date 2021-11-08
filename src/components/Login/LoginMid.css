@@ -8,61 +8,33 @@
 }
 
 .LoginMid {
-  height: 280px;
   background-color: #fcfcfc;
+  padding-top: 40px;
+  margin: 0 auto;
 }
 
-.login-mid-div1 {
+.div1-login-mid {
   font-family: Jost-Regular;
-  background-color: #fcfcfc;
-  height: 60px;
-  width: 364px;
-  margin: 0 25px;
-}
-.login-mid-div2 {
-  font-family: Jost-Regular;
-  background-color: #fcfcfc;
-  height: 60px;
-  width: 364px;
-  margin: 25px 25px;
+  background-color: rgba(254, 254, 254, 0.55);
+  padding: 10px 0;
+  width: calc(100% - 10%);
+  margin: 0 auto;
 }
 
-.login-mid-p1 {
-  font-family: Jost-Regular;
-  color: #7c7c7c;
-  height: 40px;
+.p1-login-mid {
   width: 100%;
+  color: gray;
   margin: 0px;
-}
-.login-mid-p2 {
-  font-family: Jost-Regular;
-  color: #7c7c7c;
-  height: 40px;
-  width: 100%;
-  margin: 0px;
+  padding-bottom: 10px;
 }
 
-.login-mid-inpt1 {
-  font-family: Jost-Regular;
+.inpt1-login-mid {
+  width: 100%;
   color: #000000;
   font-size: 18px;
-  height: 40px;
-  width: 100%;
   border: 0px;
-  border-bottom: 1px solid #e2e2e2;
-  background-color: #fcfcfc;
-  outline: 0;
-  padding: 0px;
-}
-.login-mid-inpt2 {
-  font-family: Jost-Regular;
-  font-size: 20px;
-  color: #000000;
-  height: 40px;
-  width: 100%;
-  border: 0px;
-  border-bottom: 1px solid #e2e2e2;
-  background-color: #fcfcfc;
+  border-bottom: 1px solid black; /* #e2e2e2 */
+  background-color: rgba(254, 254, 254, 0.55);
   outline: 0;
   padding: 0px;
 }

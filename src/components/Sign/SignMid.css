@@ -14,10 +14,12 @@
 .div1-sign-mid {
   max-width: 364px;
   margin: 0 auto;
+  padding-top: 38px;
 }
 .div2-sign-mid {
   font-family: Jost-Regular;
   background-color: rgba(254, 254, 254, 0.55);
+  padding: 10px 0;
 }
 
 .p1-sign-mid {

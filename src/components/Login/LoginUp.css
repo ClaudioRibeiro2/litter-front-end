@@ -21,27 +21,3 @@
   background-image: url(../../assets/login-img1.png);
   filter: blur(60px);
 }
-
-.div1-login-up {
-  padding: 0 5%;
-  padding-top: 229px;
-  filter: blur(0px);
-  width: calc(100% - 10%);
-}
-
-.p1-login-up {
-  font-family: Jost-Medium;
-  font-size: 26px;
-  line-height: 29px;
-  color: #000;
-  filter: blur(0px);
-  margin: 0px;
-}
-.p2-login-up {
-  font-family: Jost-Regular;
-  font-size: 16px;
-  line-height: 15px;
-  color: #7c7c7c;
-  margin: 0px;
-  margin-top: 7px;
-}

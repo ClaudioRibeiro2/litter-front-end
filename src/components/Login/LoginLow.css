@@ -21,35 +21,3 @@
   background-image: url(../../assets/login-img2.png);
   filter: blur(40px);
 }
-.div1-login-low {
-  filter: blur(0px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.btn1-login-low {
-  width: 364px;
-  height: 67px;
-  font-size: 18px;
-  font-weight: 700;
-  background-color: #ff8b59;
-  color: #fff9ff;
-  border-radius: 19px;
-  
-}
-
-.p1-login-low {
-  font-family: Jost-Regular;
-  font-size: 14px;
-  line-height: 15.1px;
-  margin: 0 auto;
-}
-
-.a1-login-low {
-  font-family: Jost-Regular;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 15.1px;
-  color: #ff8b59;
-}

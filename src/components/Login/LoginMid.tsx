@@ -6,14 +6,27 @@ import { useLoginStore } from "../../loginFormStore";
 interface ContainerProps {}
 
 const LoginMid: React.FC<ContainerProps> = () => {
+  const [username, setUsername] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [isError, setIsError] = useState<boolean>(false);
+  const [errorMsg, setErrorMsg] = useState<string>("");
+
+  useLoginStore.subscribe((state) => {
+    setUsername(state.username);
+    setPassword(state.password);
+    setIsError(state.error);
+    setErrorMsg(state.errorMsg);
+  });
+
   return (
     <div className="MidDiv">
       <div className="inptDiv01">
+        {isError && errorMsg}
         <p className="p01">Email</p>
         <input
           type="text"
           className="inpt01"
-          value={useLoginStore.getState((state) => state.username)}
+          value={username}
           onChange={(e) => {
             useLoginStore.setState({ username: e.target.value });
           }}
@@ -24,7 +37,7 @@ const LoginMid: React.FC<ContainerProps> = () => {
         <input
           type="password"
           className="inpt02"
-          value={useLoginStore.getState((state) => state.password)}
+          value={password}
           onChange={(e) => {
             useLoginStore.setState({ password: e.target.value });
           }}

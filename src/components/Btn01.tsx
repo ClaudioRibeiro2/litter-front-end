@@ -1,17 +1,25 @@
 import React from "react";
-import { IonInput } from "@ionic/react";
 import "./Btn01.css";
+import { useLoginStore } from "../loginFormStore";
+import { login } from "../hooks/useLogin";
+import { Link, useHistory } from "react-router-dom";
 
 interface ContainerProps {}
 
 const Btn01: React.FC<ContainerProps> = () => {
+  const history = useHistory();
   return (
     <div className="container">
-      <a href="/logar">
-        <button className="btn01" type="button">
-          Entrar
-        </button>
-      </a>
+      <button
+        className="btn01"
+        type="button"
+        onClick={() => {
+          login(useLoginStore.getState());
+          history.push("/");
+        }}
+      >
+        Entrar
+      </button>
       <div className="divP">
         <p className="p01">
           Não possui uma conta?{" "}

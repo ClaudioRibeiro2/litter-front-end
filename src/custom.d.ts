@@ -5,6 +5,8 @@ export interface InitialState {
 export interface LoginRequest {
   username: string;
   password: string;
+  error: boolean;
+  errorMsg: string;
 }
 
 export interface LoginResponse {

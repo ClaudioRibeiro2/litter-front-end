@@ -42,6 +42,21 @@ const SignMid: React.FC<ContainerProps> = () => {
           </p>
         </div>
       </div>
+      {/* ----------------------------------------------------------------- */}
+      {/* BOTÂO */}
+      <div className="div4-sign-mid">
+        <a href="/login">
+          <button className="btn1-sign-mid" type="button">
+            Entrar
+          </button>
+        </a>
+        <p className="p4-sign-mid">
+          Já possui uma conta?{" "}
+          <a href="/login" className="a1-sign-mid">
+            Login
+          </a>
+        </p>
+      </div>
     </div>
   );
 };

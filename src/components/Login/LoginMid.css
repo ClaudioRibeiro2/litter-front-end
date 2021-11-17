@@ -1,4 +1,4 @@
-  @font-face {
+@font-face {
   font-family: Jost-Medium;
   src: url(/src/assets/Fonts/Jost-Medium.ttf);
 }
@@ -7,69 +7,99 @@
   src: url(/src/assets/Fonts/Jost-Regular.ttf);
 }
 
-.MidDiv {
-  height: 31.25%;
+.LoginMid {
   background-color: #fcfcfc;
-  padding-top: 6.04%;
+  margin: 0 auto;
 }
 
-.inptDiv01 {
-  font-family: Jost-Regular;
-  background-color: #fcfcfc;
-  height: 28.57%;
-  width: 87.92%;
-  margin-left: 6.04%;
-}
+/* TITULO E SUBTITULO */
 
-.p01{
-  font-family: Jost-Regular;
-  color: #7C7C7C;
-  height: 40px;
-  width: 100%;
+.div1-login-mid {
+  padding: 0 5%;
+  padding-top: 229px;
+  filter: blur(0px);
+  width: calc(100% - 10%);
+}
+.p1-login-mid {
+  font-family: Jost-Medium;
+  font-size: 26px;
+  line-height: 29px;
+  color: #000;
+  filter: blur(0px);
   margin: 0px;
-  
+}
+.p2-login-mid {
+  font-family: Jost-Regular;
+  font-size: 16px;
+  line-height: 15px;
+  color: #7c7c7c;
+  margin: 0px;
+  margin-top: 7px;
 }
 
-.inpt01{
+/* INPUT's */
+
+.div2-login-mid {
   font-family: Jost-Regular;
+  background-color: rgba(254, 254, 254, 0.55);
+  padding: 20px 0;
+  width: calc(100% - 10%);
+  margin: 0 auto;
+}
+.p3-login-mid {
+  width: calc(100% - 10%);
+  color: gray;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+.inpt1-login-mid {
+  width: calc(100% - 10%);
   color: #000000;
   font-size: 18px;
-  height: 40px;
-  width: 100%;
   border: 0px;
-  border-bottom: 1px solid #e2e2e2;
-  background-color: #fcfcfc;
+  border-bottom: 1px solid rgba(226, 226, 226, 1); /* #e2e2e2 */
+  background-color: rgba(254, 254, 254, 0.55);
   outline: 0;
   padding: 0px;
-  
+}
+.padding1 {
+  padding-top: 40px;
+}
+.padding2 {
+  padding-bottom: 65px;
 }
 
-.inptDiv02 {
-  font-family: Jost-Regular;
-  background-color: #fcfcfc;
-  height: 28.57%;
-  width: 87.92%;
-  margin-top: 6.04%;
-  margin-left: 6.04%;
+/* BOTÂO */
+
+.div3-login-mid {
+  filter: blur(0px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.p02{
-  font-family: Jost-Regular;
-  color: #7C7C7C;
-  height: 40px;
-  width: 100%;
-  margin: 0px;
+.btn1-login-mid {
+  width: 364px;
+  height: 67px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #ff8b59;
+  color: #fff9ff;
+  border-radius: 19px;
 }
 
-.inpt02{
+.p4-login-mid {
   font-family: Jost-Regular;
-  font-size: 20px;
-  color: #000000;
-  height: 40px;
-  width: 100%;
-  border: 0px;
-  border-bottom: 1px solid #e2e2e2;
-  background-color: #fcfcfc;
-  outline: 0;
-  padding: 0px;
+  font-size: 14px;
+  line-height: 15.1px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.a1-login-mid {
+  font-family: Jost-Regular;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 15px;
+  color: #ff8b59;
 }

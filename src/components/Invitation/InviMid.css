@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Jost-Medium;
+  src: url(/src/assets/Fonts/Jost-Medium.ttf);
+}
+@font-face {
+  font-family: Jost-Regular;
+  src: url(/src/assets/Fonts/Jost-Regular.ttf);
+}
+
+.InviMid{
+  height: 360px;
+  background-color: rgba(254, 254, 254, 0.55);
+  filter: blur(0px);
+}
+
+.div1-invimid{
+  height: 73px;
+  width: 367px;
+  filter: blur(0px);
+}
+.p1-invimid{
+  height: 38px;
+  width: auto;
+}
+.div2-invimid{
+  height: 35px;
+  width: auto;
+}
+.inpt1-invimid{
+  height: 23px;
+  width: 323px;
+}
+.img1-invimid{
+
+}

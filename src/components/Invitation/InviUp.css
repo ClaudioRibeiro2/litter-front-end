@@ -6,18 +6,20 @@
   font-family: Jost-Regular;
   src: url(/src/assets/Fonts/Jost-Regular.ttf);
 }
-.LoginLow {
+
+.InviUp {
   background-color: rgba(252, 252, 252, 0.6);
   width: auto;
+  height: 233px;
+  position: relative;
 }
-
-.LoginLow::before {
+.InviUp::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 173px;
-  background: rgba(252, 252, 252, 0.6);
-  background-image: url(../../assets/login-img2.png);
-  filter: blur(40px);
+  height: 100%;
+  background-image: url(../../assets/UpDivImg.png);
+  filter: blur(60px);
 }

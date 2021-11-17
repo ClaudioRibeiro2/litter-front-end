@@ -1,0 +1,23 @@
+@font-face {
+  font-family: Jost-Medium;
+  src: url(/src/assets/Fonts/Jost-Medium.ttf);
+}
+@font-face {
+  font-family: Jost-Regular;
+  src: url(/src/assets/Fonts/Jost-Regular.ttf);
+}
+.ChooseMid {
+  height: 404px;
+  width: auto;
+  background-color: rgba(254, 254, 254, 0.55);
+}
+.div1-choosemid {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.img1-choosemid{
+  height: 369px;
+  width: 211px;
+}

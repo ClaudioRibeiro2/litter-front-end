@@ -6,6 +6,8 @@ import { IonReactRouter } from "@ionic/react-router";
 import Login from "./pages/Login";
 import Sign from "./pages/Sign";
 import Splash from "./pages/Splash";
+import Choose from "./pages/Choose";
+import Invitation from "./pages/Invitation";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";

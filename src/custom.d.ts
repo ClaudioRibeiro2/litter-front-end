@@ -18,3 +18,19 @@ export interface LoginResponse {
   email: string;
   roles: string[];
 }
+
+export interface Role {
+  id: number;
+  name: string;
+}
+
+export interface GetUserByNameResquest {
+  username: string;
+}
+
+export interface User {
+  id: number;
+  username: string;
+  email: string;
+  roles: Role[];
+}

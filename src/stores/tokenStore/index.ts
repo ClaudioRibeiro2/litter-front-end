@@ -1,4 +1,4 @@
-import { InitialState } from "../custom";
+import { InitialState } from "../../custom";
 import create from "zustand";
 import { devtools } from "zustand/middleware";
 

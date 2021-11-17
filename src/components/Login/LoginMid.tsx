@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./LoginMid.css";
 
-import { useLoginStore } from "../../loginFormStore";
+import { useLoginStore } from "../../stores/loginFormStore";
 
 import "./LoginLow.css";
 import "./LoginMid.css";
 import "./LoginUp.css";
-import { InitialState } from "../../custom";
+import { login } from "../../hooks/useLogin";
+import { useHistory } from "react-router-dom";
 
 interface ContainerProps {}
 
 const LoginMid: React.FC<ContainerProps> = () => {
+  const history = useHistory();
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [isError, setIsError] = useState<boolean>(false);
@@ -57,13 +59,18 @@ const LoginMid: React.FC<ContainerProps> = () => {
       {/* ----------------------------------------------------------------- */}
       {/* BOTÕES */}
       <div className="div3-login-mid">
-        <a href="/sign">
-          <button className="btn1-login-mid" type="button">
-            Entrar
-          </button>
-        </a>
+        <button
+          className="btn1-login-mid"
+          type="button"
+          onClick={() => {
+            login(useLoginStore.getState());
+            history.push("/home");
+          }}
+        >
+          Entrar
+        </button>
         <p className="p4-login-mid">
-          Não possui uma conta?{" "}
+          Não possui uma conta?
           <a href="/sign" className="a1-login-mid">
             Cadastre-se
           </a>

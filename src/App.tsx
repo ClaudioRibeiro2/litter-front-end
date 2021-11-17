@@ -29,6 +29,7 @@ import "@ionic/react/css/display.css";
 import "./theme/variables.css";
 import { isAuth } from "./hooks/useLogin";
 import Home from "./pages/Home";
+import CreateGroup from "./pages/CreateGroup";
 
 const App: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>();
@@ -51,7 +52,6 @@ const App: React.FC = () => {
             exact
             path="/"
             render={() => {
-              console.log("/");
               return isAuthenticated ? (
                 <Redirect to="/home" />
               ) : (
@@ -70,6 +70,9 @@ const App: React.FC = () => {
           </Route>
           <Route exact path="/home">
             <Home />
+          </Route>
+          <Route exact path="/create-group">
+            <CreateGroup />
           </Route>
         </IonRouterOutlet>
       </IonReactRouter>

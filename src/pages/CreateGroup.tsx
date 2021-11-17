@@ -1,14 +1,14 @@
 import { IonPage } from "@ionic/react";
 import React from "react";
 
-const Home = () => {
-  console.log("HOME");
+import { css } from "@emotion/css";
 
+const CreateGroup = () => {
   return (
     <IonPage>
-      <h1>Home</h1>
+      <div></div>
     </IonPage>
   );
 };
 
-export default Home;
+export default CreateGroup;

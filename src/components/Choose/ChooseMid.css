@@ -7,17 +7,57 @@
   src: url(/src/assets/Fonts/Jost-Regular.ttf);
 }
 .ChooseMid {
-  height: 404px;
-  width: auto;
-  background-color: rgba(254, 254, 254, 0.55);
+  background-color: transparent;
+  margin: 0 auto;
 }
-.div1-choosemid {
-  height: 100%;
-  width: 100%;
+
+/* HEADER */
+.div1-choose-mid {
+  width: calc(100% - 10%);
+  filter: blur(0px);
+  padding-top: 165px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+.p1-choose-mid {
+  font-family: Jost-Medium;
+  font-size: 26px;
+  line-height: 29px;
+  margin: 0;
+  text-align: center;
+}
+
+/* IMAGEM */
+.div2-choose-mid {
   display: flex;
   justify-content: center;
 }
-.img1-choosemid{
+.img1-choose-mid{
   height: 369px;
   width: 211px;
+}
+
+/* BOTÔES */
+.div3-choose-mid {
+  filter: blur(0px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+}
+
+.link1-choose-mid{
+  width: 100%;
+  padding: 15px 0;
+}
+
+.btn1-choose-mid {
+  width: 90%;
+  margin: 0 5%;
+  height: 67px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #ff8b59;
+  color: #fff9ff;
+  border-radius: 19px;
 }

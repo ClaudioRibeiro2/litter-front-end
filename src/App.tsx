@@ -1,3 +1,4 @@
+import React from "react";
 import { Redirect, Route } from "react-router-dom";
 import { IonApp, IonRouterOutlet } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
@@ -6,6 +7,7 @@ import Sign from "./pages/Sign";
 import Splash from "./pages/Splash";
 import Choose from "./pages/Choose";
 import Invitation from "./pages/Invitation";
+import Create from "./pages/Create";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -47,6 +49,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/invitation">
           <Invitation />
+        </Route>
+        <Route exact path="/create">
+          <Create />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

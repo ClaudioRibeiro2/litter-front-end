@@ -1,3 +1,4 @@
+import React from "react";
 import { IonImg } from "@ionic/react";
 import "./InviMid.css";
 

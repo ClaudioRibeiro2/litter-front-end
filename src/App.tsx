@@ -32,17 +32,9 @@ import Home from "./pages/Home";
 import CreateGroup from "./pages/CreateGroup";
 
 const App: React.FC = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>();
-
-  useEffect(() => {
-    isAuth()
-      .then((isAuth) => {
-        setIsAuthenticated(isAuth);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
-  }, [isAuth()]);
+  const isAuthenticated = async () => {
+    return await isAuth();
+  };
 
   return (
     <IonApp>
@@ -51,8 +43,8 @@ const App: React.FC = () => {
           <Route
             exact
             path="/"
-            render={() => {
-              return isAuthenticated ? (
+            render={async () => {
+              return (await isAuthenticated()) ? (
                 <Redirect to="/home" />
               ) : (
                 <Redirect to="/login" />

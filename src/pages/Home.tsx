@@ -1,8 +1,14 @@
 import { IonPage } from "@ionic/react";
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router";
+import { isAuthenticated } from "../hooks/useLogin";
 
 const Home = () => {
-  console.log("HOME");
+  const history = useHistory();
+
+  useEffect(() => {
+    isAuthenticated(history);
+  }, []);
 
   return (
     <IonPage>

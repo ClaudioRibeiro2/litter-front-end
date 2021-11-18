@@ -16,7 +16,7 @@ export interface LoginResponse {
   id: number;
   username: string;
   email: string;
-  roles: string[];
+  roles: Role[];
 }
 
 export interface Role {

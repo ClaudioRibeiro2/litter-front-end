@@ -1,6 +1,6 @@
 import { useLoginStore } from "../../stores/loginFormStore/index";
 import { useTokenStore } from "../../stores/tokenStore/index";
-import { LoginRequest, LoginResponse } from "./../../custom.d";
+import { LoginRequest, LoginResponse, User } from "./../../custom.d";
 import axios, { AxiosResponse, AxiosError } from "axios";
 import { Storage } from "@ionic/storage";
 import { useUserStore } from "../../stores/userStore";
@@ -58,14 +58,26 @@ export const isAuth = async () => {
   const store = new Storage();
   await store.create();
   const storeToken = await store.get("token");
+  const storeUser: User = await store.get("user");
 
   if (storeToken) {
     useTokenStore.setState({ token: storeToken });
+  }
+  if (storeUser !== null) {
+    const { id, username, email, roles } = storeUser;
+    useUserStore.setState({ id, username, email, roles });
   }
 
   if (storeToken) {
     return true;
   } else {
     return false;
+  }
+};
+
+export const isAuthenticated = async (history: any) => {
+  const auth = await isAuth();
+  if (!auth) {
+    history.push("/login");
   }
 };

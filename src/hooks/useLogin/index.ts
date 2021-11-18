@@ -1,10 +1,6 @@
 import { useLoginStore } from "../../stores/loginFormStore/index";
 import { useTokenStore } from "../../stores/tokenStore/index";
-import {
-  GetUserByNameResponse,
-  LoginRequest,
-  LoginResponse,
-} from "./../../custom.d";
+import { LoginRequest, LoginResponse } from "./../../custom.d";
 import axios, { AxiosResponse, AxiosError } from "axios";
 import { Storage } from "@ionic/storage";
 import { useUserStore } from "../../stores/userStore";

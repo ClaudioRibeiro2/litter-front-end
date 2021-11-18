@@ -15,7 +15,7 @@ const LoginMid: React.FC<ContainerProps> = () => {
         <p className="p2-login-mid">Adicione seu email e senha.</p>
       </div>
       {/* INPUT'S */}
-      <div className="div2-login-mid padding-top">
+      <div className="div2-login-mid paddingtop-login-mid">
         <p className="p3-login-mid">Nome de usuário</p>
         <input className="inpt1-login-mid" type="text" />
       </div>

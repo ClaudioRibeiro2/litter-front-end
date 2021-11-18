@@ -10,7 +10,7 @@
   background-color: transparent;
   margin: 0 auto;
 }
-.padding-top1 {
+.paddingtop-sign-mid {
   padding-top: 40px !important;
 }
 
@@ -61,7 +61,7 @@
   color: #000000;
   font-size: 18px;
   border: 0px;
-  border-bottom: 1px solid black; /* #e2e2e2 */
+  border-bottom: 1px solid rgba(226, 226, 226, 1); /* #e2e2e2 */
   background-color: rgba(254, 254, 254, 0.55);
   outline: 0;
   padding: 0px;
@@ -73,10 +73,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 160px;
 }
 
 .btn1-sign-mid {
+  filter: blur(0px);
   width: 90%;
   margin: 0 5%;
   height: 67px;
@@ -88,10 +89,12 @@
 }
 
 .link1-sign-mid {
+  filter: blur(0px);
   width: 100%;
 }
 
 .p4-sign-mid {
+  filter: blur(0px);
   font-family: Jost-Regular;
   font-size: 14px;
   line-height: 15.1px;
@@ -100,6 +103,7 @@
 }
 
 .link2-sign-mid {
+  filter: blur(0px);
   font-family: Jost-Regular;
   text-decoration: none;
   font-size: 14px;

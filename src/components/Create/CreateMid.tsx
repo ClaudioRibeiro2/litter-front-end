@@ -30,7 +30,7 @@ const CreateMid: React.FC<ContainerProps> = () => {
         </Link>
       </div>
       {/* INPUT's */}
-      <div className="div3-create-mid padding-top">
+      <div className="div3-create-mid paddingtop-create-mid">
         <p className="p1-create-mid">Nome do Grupo</p>
         <input
           className="inpt1-create-mid"

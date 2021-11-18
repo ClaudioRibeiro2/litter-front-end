@@ -14,7 +14,7 @@ const SignMid: React.FC<ContainerProps> = () => {
         <p className="p2-sign-mid">Insira suas credenciais para continuar.</p>
       </div>
       {/* INPUT's */}
-      <div className="div2-sign-mid padding-top1">
+      <div className="div2-sign-mid paddingtop-sign-mid">
         <p className="p3-sign-mid">Nome de usuário</p>
         <input className="inpt1-sign-mid" type="text" />
       </div>

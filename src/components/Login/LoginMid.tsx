@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./LoginMid.css";
 
-import { useLoginStore } from "../../loginFormStore";
+import { useLoginStore } from "../../stores/loginFormStore";
+
+import "./LoginLow.css";
+import "./LoginMid.css";
+import "./LoginUp.css";
+import { login } from "../../hooks/useLogin";
+import { useHistory } from "react-router-dom";
 
 interface ContainerProps {}
 
 const LoginMid: React.FC<ContainerProps> = () => {
+  const history = useHistory();
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [isError, setIsError] = useState<boolean>(false);

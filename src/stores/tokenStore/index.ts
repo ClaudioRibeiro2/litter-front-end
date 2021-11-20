@@ -1,4 +1,4 @@
-import { InitialState } from "../custom";
+import { InitialState } from "../../custom";
 import create from "zustand";
 import { devtools } from "zustand/middleware";
 
@@ -7,7 +7,10 @@ const initialState: InitialState = {
 };
 
 export const useTokenStore = create<InitialState>(
-  devtools((set) => ({
-    ...initialState,
-  }))
+  devtools(
+    () => ({
+      ...initialState,
+    }),
+    { name: "Token Store" }
+  )
 );

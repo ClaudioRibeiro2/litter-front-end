@@ -1,4 +1,4 @@
-import { LoginRequest } from "./../custom.d";
+import { LoginRequest } from "../../custom";
 import create from "zustand";
 import { devtools } from "zustand/middleware";
 
@@ -10,7 +10,12 @@ const initialState: LoginRequest = {
 };
 
 export const useLoginStore = create<LoginRequest>(
-  devtools((set) => ({
-    ...initialState,
-  }))
+  devtools(
+    () => ({
+      ...initialState,
+    }),
+    {
+      name: "Form Store",
+    }
+  )
 );

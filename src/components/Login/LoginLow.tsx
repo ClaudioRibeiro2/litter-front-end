@@ -5,9 +5,6 @@ import Btn01 from '../Btn01';
 interface ContainerProps {}
 
 const LoginLow: React.FC<ContainerProps> = () => {
-  return (
-    <div className="LoginLow">
-    </div>
-  );
+  return <div className="LoginLow"></div>;
 };
 export default LoginLow;

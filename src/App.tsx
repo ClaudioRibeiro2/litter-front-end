@@ -29,9 +29,12 @@ import "@ionic/react/css/display.css";
 import "./theme/variables.css";
 import { isAuth } from "./hooks/useLogin";
 import Home from "./pages/Home";
+import CreateGroup from "./pages/CreateGroup";
 
 const App: React.FC = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>();
+  const isAuthenticated = async () => {
+    return await isAuth();
+  };
 
   useEffect(() => {
     isAuth()
@@ -50,9 +53,8 @@ const App: React.FC = () => {
           <Route
             exact
             path="/"
-            render={() => {
-              console.log("/");
-              return isAuthenticated ? (
+            render={async () => {
+              return (await isAuthenticated()) ? (
                 <Redirect to="/home" />
               ) : (
                 <Redirect to="/login" />
@@ -70,6 +72,9 @@ const App: React.FC = () => {
           </Route>
           <Route exact path="/home">
             <Home />
+          </Route>
+          <Route exact path="/create-group">
+            <CreateGroup />
           </Route>
         </IonRouterOutlet>
       </IonReactRouter>

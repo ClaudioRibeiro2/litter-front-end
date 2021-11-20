@@ -5,9 +5,6 @@ import "./ChooseUp.css";
 const ChooseUp: React.FC = () => {
   return (
       <div className="ChooseUp">
-        <div className="div1-chooseup">
-          <p className="p1-chooseup">Agora é hora de escolher!</p>
-        </div>
       </div>
   );
 };

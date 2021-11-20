@@ -7,7 +7,7 @@ import "./LoginLow.css";
 import "./LoginMid.css";
 import "./LoginUp.css";
 import { login } from "../../hooks/useLogin";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 interface ContainerProps {}
 
@@ -27,36 +27,35 @@ const LoginMid: React.FC<ContainerProps> = () => {
 
   return (
     <div className="LoginMid">
-      {/* TITULO E SUBTITULO */}
+      {/* HEADER */}
       <div className="div1-login-mid">
         <p className="p1-login-mid">Login</p>
         <p className="p2-login-mid">Adicione seu email e senha.</p>
       </div>
-      {/* ----------------------------------------------------------------- */}
-      {/* INPUTS */}
-      <div className="div2-login-mid padding1">
+      {/* INPUT'S */}
+      <div className="div2-login-mid paddingtop-login-mid">
         <p className="p3-login-mid">Nome de usuário</p>
         <input className="inpt1-login-mid" type="text" />
       </div>
-      <div className="div2-login-mid padding2">
+      <div className="div2-login-mid">
         <p className="p3-login-mid">Senha</p>
         <input className="inpt1-login-mid" type="password" />
       </div>
-      {/* ----------------------------------------------------------------- */}
-      {/* BOTÕES */}
+      {/* BOTÂO */}
       <div className="div3-login-mid">
-        <a href="/sign">
+        <Link to="/sign" className="link1-login-mid">
           <button className="btn1-login-mid" type="button">
             Entrar
           </button>
-        </a>
-        <p className="p4-login-mid">
-          Não possui uma conta?{" "}
-          <a href="/sign" className="a1-login-mid">
-            Cadastre-se
-          </a>
-        </p>
-        {/* ----------------------------------------------------------------- */}
+        </Link>
+        <div className="div4-login-mid">
+          <p className="p4-login-mid">
+            Não possui uma conta?{" "}
+            <Link to="/sign">
+              <p className="link2-login-mid">Cadastre-se</p>
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );

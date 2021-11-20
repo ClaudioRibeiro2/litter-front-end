@@ -1,46 +1,46 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./SignMid.css";
+
 
 interface ContainerProps {}
 
 const SignMid: React.FC<ContainerProps> = () => {
   return (
     <div className="SignMid">
-      {/* TITULO E SUBTITULO */}
+      {/* HEADER */}
       <div className="div1-sign-mid">
         <p className="p1-sign-mid">Cadastre-se</p>
         <p className="p2-sign-mid">Insira suas credenciais para continuar.</p>
       </div>
-      {/* ----------------------------------------------------------------- */}
-      {/* INPUTS */}
-      <div className="div2-sign-mid">
-        <div className="div3-sign-mid">
-          <p className="p3-sign-mid">Nome de usuário</p>
-          <input className="inpt1-sign-mid" type="text" />
-        </div>
-        <div className="div3-sign-mid">
-          <p className="p3-sign-mid">Email</p>
-          <input className="inpt1-sign-mid" type="text" />
-        </div>
-        <div className="div3-sign-mid">
-          <p className="p3-sign-mid">Senha</p>
-          <input className="inpt1-sign-mid" type="password" />
-        </div>
+      {/* INPUT's */}
+      <div className="div2-sign-mid paddingtop-sign-mid">
+        <p className="p3-sign-mid">Nome de usuário</p>
+        <input className="inpt1-sign-mid" type="text" />
       </div>
-      {/* ----------------------------------------------------------------- */}
+      <div className="div2-sign-mid">
+        <p className="p3-sign-mid">Email</p>
+        <input className="inpt1-sign-mid" type="text" />
+      </div>
+      <div className="div2-sign-mid">
+        <p className="p3-sign-mid">Senha</p>
+        <input className="inpt1-sign-mid" type="password" />
+      </div>
       {/* BOTÂO */}
-      <div className="div4-sign-mid">
-        <a href="/login">
+      <div className="div3-sign-mid">
+        <Link to="/sign" className="link1-sign-mid">
           <button className="btn1-sign-mid" type="button">
             Entrar
           </button>
-        </a>
-        <p className="p4-sign-mid">
-          Já possui uma conta?{" "}
-          <a href="/login" className="a1-sign-mid">
-            Login
-          </a>
-        </p>
+        </Link>
+        <div className="div4-sign-mid">
+          <p className="p4-sign-mid">
+            Não possui uma conta?{" "}
+            <Link to="/sign">
+              <p className="link2-sign-mid">Cadastre-se</p>
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );

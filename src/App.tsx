@@ -8,6 +8,7 @@ import Sign from "./pages/Sign";
 import Splash from "./pages/Splash";
 import Choose from "./pages/Choose";
 import Invitation from "./pages/Invitation";
+import Create from "./pages/Create";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -29,38 +30,18 @@ import "@ionic/react/css/display.css";
 import "./theme/variables.css";
 import { isAuth } from "./hooks/useLogin";
 import Home from "./pages/Home";
-import CreateGroup from "./pages/CreateGroup";
 
 const App: React.FC = () => {
-  const isAuthenticated = async () => {
-    return await isAuth();
-  };
 
-  useEffect(() => {
-    isAuth()
-      .then((isAuth) => {
-        setIsAuthenticated(isAuth);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
-  }, [isAuth()]);
+
 
   return (
     <IonApp>
       <IonReactRouter>
         <IonRouterOutlet>
-          <Route
-            exact
-            path="/"
-            render={async () => {
-              return (await isAuthenticated()) ? (
-                <Redirect to="/home" />
-              ) : (
-                <Redirect to="/login" />
-              );
-            }}
-          />
+        <Route exact path="/">
+            <Login />
+          </Route>
           <Route exact path="/login">
             <Login />
           </Route>
@@ -73,8 +54,14 @@ const App: React.FC = () => {
           <Route exact path="/home">
             <Home />
           </Route>
-          <Route exact path="/create-group">
-            <CreateGroup />
+          <Route exact path="/create">
+            <Create />
+          </Route>
+          <Route exact path="/choose">
+            <Choose />
+          </Route>
+          <Route exact path="/invitation">
+            <Invitation />
           </Route>
         </IonRouterOutlet>
       </IonReactRouter>

@@ -1,3 +1,4 @@
+import React from "react";
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import InviUp from '../components/Invitation/InviUp';
 import InviMid from '../components/Invitation/InviMid';

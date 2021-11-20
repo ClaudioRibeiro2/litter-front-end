@@ -1,3 +1,4 @@
+import React from "react";
 import './InviUp.css';
 
 interface ContainerProps { }

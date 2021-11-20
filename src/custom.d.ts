@@ -9,7 +9,7 @@ export interface LoginRequest {
   errorMsg: string;
 }
 
-export interface LoginResponse {
+export interface JwtReponse {
   token: string;
   issuedAt: Date;
   type: string;
@@ -33,4 +33,11 @@ export interface User {
   username: string;
   email: string;
   roles: Role[];
+}
+
+export interface RegisterRequest {
+  username: string;
+  email: string;
+  password: string;
+  roles: Role[]
 }

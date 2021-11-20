@@ -1,6 +1,6 @@
 import { useLoginStore } from "../../stores/loginFormStore/index";
 import { useTokenStore } from "../../stores/tokenStore/index";
-import { LoginRequest, LoginResponse, User } from "./../../custom.d";
+import { LoginRequest, JwtReponse, User } from "./../../custom.d";
 import axios, { AxiosResponse, AxiosError } from "axios";
 import { Storage } from "@ionic/storage";
 import { useUserStore } from "../../stores/userStore";
@@ -16,7 +16,7 @@ export const login = async ({ username, password }: LoginRequest) => {
     useTokenStore.setState({ token: storeToken });
   } else {
     //Will do the requests only if there isn't the token on the storage
-    const res: void | AxiosResponse<LoginResponse> = await axios
+    const res: void | AxiosResponse<JwtReponse> = await axios
       .post("http://localhost:8080/api/auth/signin", {
         username,
         password,
@@ -50,6 +50,7 @@ export const login = async ({ username, password }: LoginRequest) => {
         error: false,
         errorMsg: "",
       });
+      useUserStore.setState(user);
     }
   }
 };
@@ -79,5 +80,7 @@ export const isAuthenticated = async (history: any) => {
   const auth = await isAuth();
   if (!auth) {
     history.push("/login");
+  } else {
+    history.push("/home");
   }
 };

@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   IonContent,
-  IonHeader,
   IonPage,
-  IonTitle,
-  IonToolbar,
 } from "@ionic/react";
 import MidDiv from "../components/Login/LoginMid";
 import UpDiv from "../components/Login/LoginUp";

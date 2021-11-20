@@ -1,6 +1,6 @@
 import React from "react";
 import "./Btn01.css";
-import { useLoginStore } from "../loginFormStore";
+import { useLoginStore } from "../stores/loginFormStore";
 import { login } from "../hooks/useLogin";
 import { Link, useHistory } from "react-router-dom";
 
@@ -22,10 +22,10 @@ const Btn01: React.FC<ContainerProps> = () => {
       </button>
       <div className="divP">
         <p className="p01">
-          Não possui uma conta?{" "}
-          <a href="/sign" className="link">
+          Não possui uma conta?
+          <Link to="/sign" className="link">
             Cadastre-se
-          </a>
+          </Link>
         </p>
       </div>
     </div>

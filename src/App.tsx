@@ -6,8 +6,6 @@ import { IonReactRouter } from "@ionic/react-router";
 import Login from "./pages/Login";
 import Sign from "./pages/Sign";
 import Splash from "./pages/Splash";
-import Choose from "./pages/Choose";
-import Invitation from "./pages/Invitation";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -32,19 +30,20 @@ import Home from "./pages/Home";
 import CreateGroup from "./pages/CreateGroup";
 
 const App: React.FC = () => {
-  const isAuthenticated = async () => {
-    return await isAuth();
-  };
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
 
   useEffect(() => {
-    isAuth()
-      .then((isAuth) => {
-        setIsAuthenticated(isAuth);
-      })
-      .catch((e) => {
+    const auth = async () => {
+      try {
+        const res: boolean = await isAuth();
+        setIsAuthenticated(res);
+      } catch (e) {
         console.log(e);
-      });
-  }, [isAuth()]);
+      }
+    };
+
+    auth();
+  }, []);
 
   return (
     <IonApp>
@@ -53,12 +52,11 @@ const App: React.FC = () => {
           <Route
             exact
             path="/"
-            render={async () => {
-              return (await isAuthenticated()) ? (
-                <Redirect to="/home" />
-              ) : (
-                <Redirect to="/login" />
-              );
+            render={() => {
+              if (isAuthenticated) {
+                return <Redirect to="/home" />;
+              }
+              return <Redirect to="/login" />;
             }}
           />
           <Route exact path="/login">

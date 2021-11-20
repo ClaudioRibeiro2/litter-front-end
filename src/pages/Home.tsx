@@ -8,7 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     isAuthenticated(history);
-  }, []);
+  }, [history]);
 
   return (
     <IonPage>

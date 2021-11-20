@@ -2,12 +2,11 @@ import React from "react";
 import './LoginLow.css';
 import Btn01 from '../Btn01';
 
-interface ContainerProps { }
+interface ContainerProps {}
 
 const LoginLow: React.FC<ContainerProps> = () => {
   return (
-    <div className="LowDiv">
-      <Btn01 />
+    <div className="LoginLow">
     </div>
   );
 };

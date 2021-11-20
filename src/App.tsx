@@ -36,6 +36,16 @@ const App: React.FC = () => {
     return await isAuth();
   };
 
+  useEffect(() => {
+    isAuth()
+      .then((isAuth) => {
+        setIsAuthenticated(isAuth);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  }, [isAuth()]);
+
   return (
     <IonApp>
       <IonReactRouter>

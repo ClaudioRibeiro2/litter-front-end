@@ -1,5 +1,5 @@
 import React from "react";
-import "./LoginUp.css";
+import './LoginUp.css';
 
 interface ContainerProps {}
 

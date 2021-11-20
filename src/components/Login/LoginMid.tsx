@@ -36,41 +36,22 @@ const LoginMid: React.FC<ContainerProps> = () => {
       {/* INPUTS */}
       <div className="div2-login-mid padding1">
         <p className="p3-login-mid">Nome de usuário</p>
-        <input
-          className="inpt1-login-mid"
-          type="text"
-          value={username}
-          onChange={(e) => {
-            useLoginStore.setState({ username: e.target.value });
-          }}
-        />
+        <input className="inpt1-login-mid" type="text" />
       </div>
       <div className="div2-login-mid padding2">
         <p className="p3-login-mid">Senha</p>
-        <input
-          className="inpt1-login-mid"
-          type="password"
-          value={password}
-          onChange={(e) => {
-            useLoginStore.setState({ password: e.target.value });
-          }}
-        />
+        <input className="inpt1-login-mid" type="password" />
       </div>
       {/* ----------------------------------------------------------------- */}
       {/* BOTÕES */}
       <div className="div3-login-mid">
-        <button
-          className="btn1-login-mid"
-          type="button"
-          onClick={() => {
-            login(useLoginStore.getState());
-            history.push("/home");
-          }}
-        >
-          Entrar
-        </button>
+        <a href="/sign">
+          <button className="btn1-login-mid" type="button">
+            Entrar
+          </button>
+        </a>
         <p className="p4-login-mid">
-          Não possui uma conta?
+          Não possui uma conta?{" "}
           <a href="/sign" className="a1-login-mid">
             Cadastre-se
           </a>

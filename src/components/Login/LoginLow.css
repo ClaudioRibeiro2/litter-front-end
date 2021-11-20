@@ -8,7 +8,7 @@
 }
 .LoginLow {
   background-color: rgba(252, 252, 252, 0.6);
-  width: auto;
+  margin: 0 auto;
 }
 
 .LoginLow::before {
@@ -20,4 +20,5 @@
   background: rgba(252, 252, 252, 0.6);
   background-image: url(../../assets/login-img2.png);
   filter: blur(40px);
+  z-index: -1;
 }

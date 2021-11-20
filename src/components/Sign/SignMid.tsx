@@ -6,6 +6,7 @@ import { signIn } from "../../hooks/useSignin";
 import { useSignInStore } from "../../stores/signInForn";
 import "./SignMid.css";
 
+
 interface ContainerProps {}
 
 const SignMid: React.FC<ContainerProps> = () => {
@@ -23,7 +24,7 @@ const SignMid: React.FC<ContainerProps> = () => {
 
   return (
     <div className="SignMid">
-      {/* TITULO E SUBTITULO */}
+      {/* HEADER */}
       <div className="div1-sign-mid">
         <p className="p1-sign-mid">Cadastre-se</p>
         <p className="p2-sign-mid">Insira suas credenciais para continuar.</p>
@@ -83,7 +84,6 @@ const SignMid: React.FC<ContainerProps> = () => {
           ></IonInput>
         </div>
       </div>
-      {/* ----------------------------------------------------------------- */}
       {/* BOTÂO */}
       <div className="div4-sign-mid">
         <button

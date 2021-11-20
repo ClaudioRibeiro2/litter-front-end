@@ -1,7 +1,7 @@
 import React from "react";
-import { IonPage, IonImg } from "@ionic/react";
-import "./Splash.css";
-import img1 from "../assets/icon-splash.png";
+import { IonContent, IonHeader, IonPage, IonImg, IonToolbar } from '@ionic/react';
+import './Splash.css';
+import img1 from '../assets/icon-splash.png';
 
 const Splash: React.FC = () => {
   return (

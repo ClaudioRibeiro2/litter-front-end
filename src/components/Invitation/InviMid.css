@@ -7,29 +7,64 @@
   src: url(/src/assets/Fonts/Jost-Regular.ttf);
 }
 
-.InviMid{
+.InviMid {
   height: 360px;
   background-color: rgba(254, 254, 254, 0.55);
   filter: blur(0px);
 }
 
-.div1-invimid{
-  height: 73px;
-  width: 367px;
-  filter: blur(0px);
+/* INPUT */
+.div1-invi-mid {
+  font-family: Jost-Regular;
+  background-color: rgba(254, 254, 254, 0.55);
+  padding: 10px 0;
+  padding-top: 320px !important;
+  width: calc(100% - 10%);
+  margin: 0 auto;
 }
-.p1-invimid{
-  height: 38px;
-  width: auto;
+.p1-invi-mid {
+  width: 100%;
+  color: gray;
+  margin: 0px;
+  padding-bottom: 10px;
 }
-.div2-invimid{
+.div2-invi-mid {
   height: 35px;
   width: auto;
 }
-.inpt1-invimid{
-  height: 23px;
-  width: 323px;
+.inpt1-invi-mid {
+  width: 100%;
+  color: #000000;
+  font-size: 18px;
+  border: 0px;
+  border-bottom: 1px solid rgba(226, 226, 226, 1); /* #e2e2e2 */
+  background-color: rgba(254, 254, 254, 0.55);
+  outline: 0;
+  padding: 0px;
 }
-.img1-invimid{
+.img1-invi-mid {
+}
 
+/* BOTÂO */
+.div3-invi-mid{
+  filter: blur(0px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 320px;
+}
+.link1-invi-mid{
+  filter: blur(0px);
+  width: 100%;
+}
+.btn1-invi-mid{
+  filter: blur(0px);
+  width: 90%;
+  margin: 0 5%;
+  height: 67px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #ff8b59;
+  color: #fff9ff;
+  border-radius: 19px;
 }

@@ -6,16 +6,20 @@
   font-family: Jost-Regular;
   src: url(/src/assets/Fonts/Jost-Regular.ttf);
 }
-.ChooseUp {
-  background-color: rgba(252, 252, 252, 0.6);
-  width: auto;
+
+.CreateLow {
+  background-color: transparent;
+  margin: 0 auto;
 }
-.ChooseUp::before {
+
+.CreateLow::before {
   content: "";
   position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 229px;
+  height: 173px;
   background: rgba(252, 252, 252, 0.6);
-  background-image: url(../../assets/UpDivImg.png);
-  filter: blur(60px);
+  background-image: url(../../assets/login-img2.png);
+  filter: blur(40px);
+  z-index: -1;
 }

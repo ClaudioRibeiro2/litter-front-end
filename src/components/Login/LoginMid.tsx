@@ -31,7 +31,7 @@ const LoginMid: React.FC<ContainerProps> = () => {
 
   return (
     <div className="LoginMid">
-      {/* TITULO E SUBTITULO */}
+      {/* HEADER */}
       <div className="div1-login-mid">
         <p className="p1-login-mid">Login</p>
         <p className="p2-login-mid">Adicione seu email e senha.</p>
@@ -58,7 +58,7 @@ const LoginMid: React.FC<ContainerProps> = () => {
           }}
         />
       </div>
-      <div className="div2-login-mid padding2">
+      <div className="div2-login-mid">
         <p className="p3-login-mid">Senha</p>
         <input
           value={password}
@@ -69,8 +69,7 @@ const LoginMid: React.FC<ContainerProps> = () => {
           }}
         />
       </div>
-      {/* ----------------------------------------------------------------- */}
-      {/* BOTÕES */}
+      {/* BOTÂO */}
       <div className="div3-login-mid">
         <button
           className="btn1-login-mid"

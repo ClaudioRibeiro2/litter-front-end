@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 import { Redirect, Route } from "react-router-dom";
 import { IonApp, IonRouterOutlet } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
@@ -27,35 +28,45 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+import { isAuth } from "./hooks/useLogin";
+import Home from "./pages/Home";
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
+const App: React.FC = () => {
+
+
+
+  return (
+    <IonApp>
+      <IonReactRouter>
+        <IonRouterOutlet>
         <Route exact path="/">
-          <Redirect to="/login" />
-        </Route>
-        <Route exact path="/login">
-          <Login />
-        </Route>
-        <Route exact path="/sign">
-          <Sign />
-        </Route>
-        <Route exact path="/splash">
-          <Splash />
-        </Route>
-        <Route exact path="/choose">
-          <Choose />
-        </Route>
-        <Route exact path="/invitation">
-          <Invitation />
-        </Route>
-        <Route exact path="/create">
-          <Create />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
-);
+            <Login />
+          </Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/sign">
+            <Sign />
+          </Route>
+          <Route exact path="/splash">
+            <Splash />
+          </Route>
+          <Route exact path="/home">
+            <Home />
+          </Route>
+          <Route exact path="/create">
+            <Create />
+          </Route>
+          <Route exact path="/choose">
+            <Choose />
+          </Route>
+          <Route exact path="/invitation">
+            <Invitation />
+          </Route>
+        </IonRouterOutlet>
+      </IonReactRouter>
+    </IonApp>
+  );
+};
 
 export default App;

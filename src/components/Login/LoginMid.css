@@ -23,7 +23,6 @@
   filter: blur(0px);
   width: calc(100% - 10%);
 }
-
 .p1-login-mid {
   font-family: Jost-Medium;
   font-size: 26px;
@@ -45,7 +44,7 @@
 .div2-login-mid {
   font-family: Jost-Regular;
   background-color: rgba(254, 254, 254, 0.55);
-  padding: 10px 0;
+  padding: 20px 0;
   width: calc(100% - 10%);
   margin: 0 auto;
 }

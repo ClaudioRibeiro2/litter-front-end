@@ -1,4 +1,5 @@
-import { IonContent, IonHeader, IonPage, IonImg, IonToolbar } from '@ionic/react';
+import React from "react";
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Splash.css';
 import img1 from '../assets/icon-splash.png';
 

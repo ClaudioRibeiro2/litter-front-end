@@ -1,10 +1,23 @@
-import "./LoginLow.css";
+import React, { useState, useEffect } from "react";
 import "./LoginMid.css";
-import "./LoginUp.css";
+
+import { useLoginStore } from "../../loginFormStore";
 
 interface ContainerProps {}
 
 const LoginMid: React.FC<ContainerProps> = () => {
+  const [username, setUsername] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [isError, setIsError] = useState<boolean>(false);
+  const [errorMsg, setErrorMsg] = useState<string>("");
+
+  useLoginStore.subscribe((state) => {
+    setUsername(state.username);
+    setPassword(state.password);
+    setIsError(state.error);
+    setErrorMsg(state.errorMsg);
+  });
+
   return (
     <div className="LoginMid">
       {/* TITULO E SUBTITULO */}

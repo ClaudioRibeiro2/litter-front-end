@@ -1,4 +1,5 @@
-import "./SignMid.css";
+import React from "react";
+import './SignMid.css';
 
 interface ContainerProps {}
 

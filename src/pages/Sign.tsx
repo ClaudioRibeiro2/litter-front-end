@@ -1,3 +1,4 @@
+import React from "react";
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import SignLow from "../components/Sign/SignLow";
 import SignMid from "../components/Sign/SignMid";

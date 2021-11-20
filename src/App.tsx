@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from "react";
+
 import { Redirect, Route } from "react-router-dom";
 import { IonApp, IonRouterOutlet } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
@@ -25,32 +27,54 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
+import { isAuth } from "./hooks/useLogin";
+import Home from "./pages/Home";
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/">
-          <Redirect to="/login" />
-        </Route>
-        <Route exact path="/login">
-          <Login />
-        </Route>
-        <Route exact path="/sign">
-          <Sign />
-        </Route>
-        <Route exact path="/splash">
-          <Splash />
-        </Route>
-        <Route exact path="/choose">
-          <Choose />
-        </Route>
-        <Route exact path="/invitation">
-          <Invitation />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
-);
+const App: React.FC = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>();
+
+  useEffect(() => {
+    isAuth()
+      .then((isAuth) => {
+        setIsAuthenticated(isAuth);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  }, [isAuth()]);
+
+  return (
+    <IonApp>
+      <IonReactRouter>
+        <IonRouterOutlet>
+          <Route
+            exact
+            path="/"
+            render={() => {
+              console.log("/");
+              return isAuthenticated ? (
+                <Redirect to="/home" />
+              ) : (
+                <Redirect to="/login" />
+              );
+            }}
+          />
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/sign">
+            <Sign />
+          </Route>
+          <Route exact path="/splash">
+            <Splash />
+          </Route>
+          <Route exact path="/home">
+            <Home />
+          </Route>
+        </IonRouterOutlet>
+      </IonReactRouter>
+    </IonApp>
+  );
+};
 
 export default App;

@@ -1,4 +1,5 @@
-import "./SignUp.css";
+import React from "react";
+import './SignUp.css';
 
 interface ContainerProps {}
 

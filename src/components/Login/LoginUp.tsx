@@ -1,3 +1,5 @@
+import React from "react";
+import './LoginUp.css';
 
 interface ContainerProps {}
 
